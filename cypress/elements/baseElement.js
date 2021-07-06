@@ -1,5 +1,5 @@
 export class BaseElement {
-  constructor ({ css, xpath, name }) {
+  constructor ({ css, xpath }) {
     this.css = css
     this.xpath = xpath
     if (this.xpath) {
@@ -8,7 +8,6 @@ export class BaseElement {
     if (this.css) {
       this.element = cy.get(this.css)
     }
-    this.name = name
   }
 
   click () {
