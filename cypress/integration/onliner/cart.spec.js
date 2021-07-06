@@ -8,7 +8,10 @@ const catalogPage = new CatalogPage()
 describe('Cart Onliner', () => {
 
   it('Go to catalog', () => {
-    basePage.navigate('https://www.onliner.by/')
+    /*
+    COMMAND DEMO
+    */
+    basePage.navigate('https://www.tut.by/')
     basePage.openHeaderByName(CONST.HEADERS.CATALOG)
     cy.title().should('eq', 'Каталог Onliner')
   })

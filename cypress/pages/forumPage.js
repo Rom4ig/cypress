@@ -21,7 +21,7 @@ class ForumPage extends BasePage {
   }
 
   openNavigationHeaderByName (name) {
-    this.elements.getNavigationHeaderByText(name).click()
+    cy.clickLink(name)
   }
 
   getPageTitleText () {

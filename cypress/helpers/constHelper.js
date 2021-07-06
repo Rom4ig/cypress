@@ -29,4 +29,3 @@ export const CONST = {
     NEWEST: 'Новое за 24 часа'
   }
 }
-//div[not (contains(., 'Реклама'))]//div[@class='schema-product__title']//span[@data-bind='html: product.extended_name || product.full_name']
